@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <link rel="stylesheet" href="apps.css">
+</head>
+
+<body>
+
+    <h1>This is a Demo Form</h1>
+    <a id="home" href="chickens.html">Home</a>
+    <form class="taco" action="/tacos">
+        <section>
+            <label for="username">Enter a username</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </section>
+        <section>
+            <label for="password">Enter password</label>
+            <input type="password" placeholder="user password" id="password" name="password">
+        </section>
+        <section>
+            <label for="color">Select a color</label>
+            <input type="color" id="color" name="color">
+        </section>
+        <section>
+            <label for="fish">Do you Like fish</label>
+            <input type="checkbox" name="fish" id="agree" checked>
+        </section>
+        <section>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="way_small">
+            <br>
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="kinda_small">
+        </section>
+        <section>
+            <label for="shirt_size">Shirt Size</label>
+            <select name="shirt_size" id="shirt_size">
+                <option value="" selected></option>
+                <option value="small">Small</option>
+                <option value="med">Medium</option>
+                <option value="large">Large</option>
+                <option value="xl">1X Large</option>
+
+            </select>
+            <section>
+                <label for="cheese">Amount of cheese</label>
+                <input type="range" name="cheese_level" id="cheese" min="0" value="75" max="100">
+
+            </section>
+            <section>
+                <label for="requests">Special Requests</label>
+                <br>
+                <textarea name="Requests?" placeholder="Type in here" id="requests" cols="40" rows="10"></textarea>
+            </section>
+        </section>
+        <button id="gen">Generate form</button>
+
+    </form>
+    <hr>
+    <h2>Search Outside sources</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search" class="outside">
+        <input type="text" name="q" id="q">
+        <button>Search reddit fools</button>
+    </form>
+
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search" class="outside">
+        <input type="text" name="q" id="q">
+        <button>Search google</button>
+    </form>
+
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results" class="outside">
+        <input type="text" name="search_query" id="q">
+        <button>Search youtube</button>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummmy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" required name="username" id="username" minlength="5" maxlength="20">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="email">
+            <input type="url" required>
+        </p>
+        <button>submit</button>
+    </form>
+
+    <div class="circle"></div>
+</body>
+
+</html>

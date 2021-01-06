@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-decoration: rgb(192, 255, 255) underline wavy;
+    font-size: 80px;
+    font-family: fantasy;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/M7fDTpDnJcZ4dt3myngzxi.jpg");
+    color: #a9a9a9;
+    border-radius: 40%;
+    padding: .4em .5em;
+}
+
+p{
+    text-align: center;
+    font-weight: normal;
+}
+h2{
+    text-decoration: red wavy underline;
+}
+a{
+    text-decoration: none;
+    line-height: 2.5;
+}
+b{
+    text-decoration-thickness: thin;
+}
+body{
+    background-color: cyan;
+    background-image: url("https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c3BhY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-clip: padding-box;
+    color:aqua;
+    background-size: cover;
+}
+#home{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    border: cyan solid;
+    background-color: rgba(167, 245, 245, 0.644);
+    padding: .2em .1em;
+}
+button{
+    background-color: rgba(42, 157, 165, 0.712);
+    color: rgb(255, 255, 255);
+    width: 9em;
+    padding: 1em;
+    border-radius: 25%;
+    padding: .2em;
+    transition: 1s;
+    border: 1.5px solid;
+    transition: 0.3s;
+}
+button:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(42, 157, 165);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+#gen{
+    background-color: cyan;
+    color: black;
+}
+.outside{
+    width: 400px;
+    color: rgba(255, 255, 255, 0.747);
+}
+.taco{
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    width: 80%;
+    border-left: pink;
+    border-radius: 20%;
+    padding: 60px;
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.circle:hover{
+    background-color: blueviolet;
+    border-radius: 40%;
+}
