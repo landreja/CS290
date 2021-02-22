@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>GET Request Received</h1>
+
+    <table border="black" padding=".2em">
+        <thead>
+            <tr>
+                <th colspan="2">Get table</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each dataList}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.value}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+
+</html>
