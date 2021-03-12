@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The Home Page</h1>
+    <form method="GET" action="/">
+        <legend>Get Form</legend>
+
+        <label for="name">Exercise Name:</label>
+        <input name="name" type="text" placeholder="Exercise" id="name" required>
+        <label for="reps">Number of times the exercise was performed:</label>
+        <input name="reps" type="number" placeholder="Reps" id="reps">
+        <label for="weight">Weight:</label>
+        <input name="weight" type="number" placeholder="Weight" id="weight">
+        <label for="date">Date:</label>
+        <input name="date" type="datetime" placeholder="" id="date">
+        <label for="lbs">Lbs:</label>
+        <input name="lbs" type="number" placeholder="" id="lbs">
+        <br>
+        <button id="gen-get">Submit</button>
+
+    </form>
+    <br>
+    <br>
+    <form method="POST" action="/post">
+        <legend>Post Form</legend>
+
+        <label for="name">Exercise Name:</label>
+        <input name="name" type="text" placeholder="Exercise" id="name" required>
+        <label for="reps">Number of times the exercise was performed:</label>
+        <input name="reps" type="number" placeholder="Reps" id="reps">
+        <label for="weight">Weight:</label>
+        <input name="weight" type="number" placeholder="Weight" id="weight">
+        <label for="date">Date:</label>
+        <input name="date" type="datetime" placeholder="" id="date">
+        <label for="lbs">Lbs:</label>
+        <input name="lbs" type="number" placeholder="" id="lbs">
+        <br>
+        <button id="gen-post">Submit</button>
+
+    </form>
+
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th data-title="ID"> <a>ID</a></th>
+                <th data-title="NAME"><a>NAME</a></th>
+                <th data-title="REPS"><a>REPS</a></th>
+                <th data-title="WEIGHT"><a>WEIGHT</a></th>
+                <th data-title="DATE"><a>DATE</a></th>
+                <th data-title="LBS"><a>LBS</a></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <input type="button" value="delete" onclick="deleteRow('dataTable',this)" />
+            <tr id="DemoGrid_1">
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
